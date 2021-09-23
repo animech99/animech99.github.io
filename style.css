@@ -35,10 +35,9 @@ h1 {
     border-width: 5px;
     border-style: solid;
     border-radius: 1cm;
+    margin-right: 250;
     }
     a {
       color:rgb(99, 138, 134);
     }
-    div {
-      background-color: aquamarine;
-    }
+  
