@@ -1,43 +1,82 @@
 h1 {
     font-family: serif;
     font-size: 2cm;
-    color: #ea9b99
+    color: #819262
     }
-    h2 {
-      font-family: serif;
+ h2 {
+    font-family: serif;
     font-size: 0.5cm;
-    color: #ea9b99
+    color: #ea9b99;
+    text-align: left;
     }
-    body {
-            background-color: linen;
-        }
-    p{
+body {
+  background-color: linen;
+     }
+ p{
         font-family: sans-serif;
         font-size: 0.5cm;
       }
-     ul{
+ul{
         font-family: sans-serif;
         font-size: 0.5cm;
       }
-    h3 {
+h3 {
     font-family: serif;
     }
-    
-    .catamaran {
-      font-family: "catamaran";
-      color: gray;
-    }
-    dl {
+dl {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .lightblueborder {
+a {
+      color:rgb(99, 138, 134);
+    }
+.catamaran {
+    font-family: "catamaran";
+    color: gray;
+    text-align: left;
+    }
+
+.lightblueborder {
     border-color: rgb(172, 207, 219);
     border-width: 5px;
     border-style: solid;
     border-radius: 1cm;
     margin-right: 250;
     }
-    a {
-      color:rgb(99, 138, 134);
-    }
-  
+.tealborder {
+  border-color: rgb(99, 138, 134);
+  border-width: 3px;
+  border-style: dotted;
+  border-radius: 0.5cm;
+  border-left: 250;
+  border-right: 250;
+}
+#outsetborder {
+  border-style: outset;
+  border-color: rgb(99, 138, 134);
+  margin: auto;
+  border-left: 250;
+  border-right: 250;
+}
+#dashedborder {
+  border-style: dashed;
+  border-color: #ea9b99;
+  border-left: 250;
+  border-right: 250;
+}
+#insetborder {
+  border-style: inset;
+  border-color: rgb(99, 138, 134);
+  margin: auto;
+  border-left: 250;
+  border-right: 250;
+}
+@keyframes fadeinout {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+.animation {
+  background-color: cornsilk;
+  animation-name: fadeinout;
+  animation-duration: 4s;
+  transition:ease-in-out;
+}
