@@ -1,6 +1,7 @@
 .verticalline {
     border-left: thick solid black;
     margin-left: 10px;
+    background-image: url(/phogra_logo.png);
 }
 
 ul {
@@ -12,10 +13,16 @@ ul {
     float: right;
 }
 
+.title {
+    font-family: garamond;
+    font-size: 18pt;
+}
+
 li a {
     display:block;
     padding: 8px;
     color:black;
+    font-family: garamond;
 }
 
 li {
@@ -63,7 +70,7 @@ a:active { text-decoration: none; }
     margin-right: 100px;
 }
 
-.row {
+.rowAM {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap; 
@@ -71,15 +78,52 @@ a:active { text-decoration: none; }
     padding: 0 4px;
   }
   
+  .columnaboutme {
+    -ms-flex: 50%;
+    flex: 25%;
+    max-width: 35%;
+    padding: 2%;
+    margin-right: 2%;
+  }
+
   .column {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0.25%
   }
-  
+
   .column img {
-    margin-top: 8px;
+    margin-top: 0%;
     vertical-align: middle;
     width: 100%;
   }
+
+  .thumbnail:hover {
+    position:relative;
+    width:800px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+img {
+    border-radius: 8px;
+  }
+
+  .aboutmetext {
+      font-size: 60pt;
+      font-family: garamond;
+  }
+
+  p {
+      font-size: 20pt;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  
