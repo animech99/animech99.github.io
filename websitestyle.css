@@ -126,4 +126,19 @@ img {
     }
   }
 
+
+  /* * {
+    box-sizing: border-box;
+  } */
   
+  .columnvideo {
+    float: left;
+    width: 75%;
+    padding: 10px;
+  }
+  
+  .clearvideo:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
